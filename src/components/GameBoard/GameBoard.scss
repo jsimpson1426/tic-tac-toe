@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.row{
+    height: 60px;
+}
+
+@include media-breakpoint-up(sm){
+
+    .row{
+        height: 100px;
+    }
+
+}
+
+@include media-breakpoint-up(md){
+
+    .row{
+        height: 150px;
+    }
+
+}
+
+@include media-breakpoint-up(lg){
+
+    .row{
+        height: 200px;
+    }
+
+}
+
+@include media-breakpoint-up(xl){
+
+    .row{
+        height: 250px;
+    }
+
+}
