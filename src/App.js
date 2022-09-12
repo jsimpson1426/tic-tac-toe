@@ -11,13 +11,23 @@ const App = () => {
       ["","",""]]);
 
   const changeTurn = () => {
-    console.log('Turn Changed!');
+    currentTurn === 'x' ? setCurrentTurn('o') : setCurrentTurn('x');
+    console.log(`current turn: ${currentTurn}`);
   }
 
 
   const handleClick = (value) => {
-    changeTurn();
-    console.log(value);
+    const row = Math.floor((value - 1) / 3);
+    const column = (value - 1) % 3;
+    if(values[row][column] === ""){
+      let newValues = [...values];
+      console.log(newValues);
+      newValues[row][column] = currentTurn;
+      setValues(newValues);
+      changeTurn();
+    } else return;
+    
+    console.log(`row: ${row} column: ${column}`);
   }
 
   return (
