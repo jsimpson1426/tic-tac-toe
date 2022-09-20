@@ -1,5 +1,6 @@
 const QuestionForm = (questionID) => {
-    return ( <div>Question</div> );
-}
+    return ( 
+    <div>Question {questionID}</div>
+);}
  
 export default QuestionForm;

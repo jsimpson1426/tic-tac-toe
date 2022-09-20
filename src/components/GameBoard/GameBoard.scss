@@ -4,6 +4,16 @@
     height: 60px;
 }
 
+body{
+    width: 60%;
+    margin: auto;
+}
+
+button{
+    font-size: 24pt;
+    text-align: center;
+}
+
 @include media-breakpoint-up(sm){
 
     .row{
@@ -29,9 +39,12 @@
 }
 
 @include media-breakpoint-up(xl){
+    button{
+        font-size: 72pt;
+    }
 
     .row{
-        height: 250px;
+        height: 200px;
     }
 
 }
