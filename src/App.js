@@ -96,7 +96,7 @@ const App = () => {
       <h2>Current Turn: {currentTurn.toUpperCase()}</h2>
       <h2 hidden={winner === "" ? true : false}>{winner} has won!</h2>
       <GameBoard values={values} handleClick={handleClick} />
-      {/* <SubmissionModal Content={<QuestionForm questionID="1" />}/> */}
+      <SubmissionModal content={<QuestionForm questionID="1" />}/>
     </div>
   );
 }
